@@ -7,8 +7,24 @@
  *                            between 1 and `ceiling`
  */
 module.exports = function( ceiling ) {
-  // do work here
+  
+  var numCheck = 1;
+  var multiple = 10;
+
+  while (numCheck <= ceiling) {
+
+    if (multiple%numCheck === 0) {
+      numCheck += 1;
+    }
+    else {multiple += 1;
+    numCheck = 1;
+    }
+  }
 
 
-  return 0;
+  return multiple;
 };
+
+// start with a 'multiple' to be divided and checked by 1-10
+// if it's evenly divisible by 1, try 2, ...
+// if there is a number before ceiling that it's not divisible by, increment multiple and check again
