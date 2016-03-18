@@ -20,11 +20,6 @@ module.exports = function( ceiling ) {
     numCheck = 1;
     }
   }
-
-
+  
   return multiple;
 };
-
-// start with a 'multiple' to be divided and checked by 1-10
-// if it's evenly divisible by 1, try 2, ...
-// if there is a number before ceiling that it's not divisible by, increment multiple and check again
